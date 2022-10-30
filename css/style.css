@@ -1,0 +1,108 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+}
+
+header > img{
+  width: 100%;
+  height: auto;
+
+  
+}
+
+#logo {/*image*/
+  /*animation*/
+  transition-timing-function: ease-in;
+  transition-duration: 3s;
+
+}
+
+nav ul{
+  display: flex;
+  flex-flow:column;
+  align-items: center;
+  
+}
+
+.pricing  {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+
+}
+
+.gallery{
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery > img{
+
+  width: 100%;
+
+
+} 
+
+@media screen and (min-width: 700px) {
+	/* styles go here */
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header > img{
+    
+    width: 400px;
+    height: auto;
+    justify-content: flex-start;
+
+  
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;/*this line doesn't work*/
+  }
+
+  
+
+
+  .pricing {
+    display: flex;
+
+    flex-flow: row wrap;
+
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .gallery > img{
+    
+    width: 300px;
+    
+  
+  } 
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* styles to apply if the user's settings are set to reduced motion */
+  #logo{
+    transition-timing-function: none;
+    transition-duration: 0;
+
+  }
+}
+

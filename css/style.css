@@ -74,8 +74,9 @@ nav ul{
 
   .pricing {
     display: flex;
-
+	
     flex-flow: row wrap;
+	  justify-content: center;
 
   }
 
@@ -86,6 +87,7 @@ nav ul{
   .gallery {
     display: flex;
     flex-flow: row wrap;
+	  justify-content: center;
   }
 
   .gallery > img{
